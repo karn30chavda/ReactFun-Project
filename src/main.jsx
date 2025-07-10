@@ -40,9 +40,9 @@ const router = createBrowserRouter(
         <Route
           index
           element={
-            <div className="flex flex-col items-center justify-center text-center mt-10">
-              <ArrowBigUpDash   size={48} className="text-indigo-500 mb-2 animate-bounce" />
-              <p className="text-xl text-orange-500 font-bold tracking-wider ">
+            <div className="flex flex-col items-center justify-center mt-10 text-center">
+              <ArrowBigUpDash   size={48} className="mb-2 text-indigo-500 animate-bounce" />
+              <p className="text-xl font-bold tracking-wider text-orange-500 ">
                 Select a project to view details
               </p>
             </div>
@@ -59,8 +59,8 @@ const router = createBrowserRouter(
         <Route
           path="Card"
           element={
-            <div className="p-4 flex justify-center bg-gray-500 rounded-2xl">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-6">
+            <div className="flex justify-center p-4 bg-gray-500 rounded-2xl">
+              <div className="grid grid-cols-1 gap-10 mt-6 sm:grid-cols-2 lg:grid-cols-3">
                 <Card
                   userName="Karan Chavda"
                   imagelink="https://images.pexels.com/photos/29455461/pexels-photo-29455461.jpeg"

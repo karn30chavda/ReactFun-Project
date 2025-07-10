@@ -4,10 +4,10 @@ import { Rocket, Github, Facebook, Twitter, MessageSquareMore } from "lucide-rea
 
 export default function Footer() {
   return (
-    <footer className="bg-white text-gray-700 border-t-1 border-gray-400  shadow-inner">
-      <div className="max-w-7xl mx-auto py-10 px-6 md:flex md:justify-between">
+    <footer className="text-gray-700 bg-white border-gray-400 shadow-inner border-t-1">
+      <div className="px-6 py-10 mx-auto max-w-7xl md:flex md:justify-between">
         {/* Logo Section */}
-        <div className="mb-8 md:mb-0 flex flex-col items-start gap-2">
+        <div className="flex flex-col items-start gap-2 mb-8 md:mb-0">
           <Link to="/" className="flex items-center space-x-2">
             <img
               src={logo}
@@ -17,29 +17,29 @@ export default function Footer() {
           </Link>
           <p className="text-sm text-gray-500">
             Practice • Build • Launch{" "}
-            <Rocket className="inline align-middle ml-1" size={16} />
+            <Rocket className="inline ml-1 align-middle" size={16} />
           </p>
         </div>
 
         {/* Links Grid */}
-        <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 text-sm">
+        <div className="grid grid-cols-2 gap-8 text-sm sm:grid-cols-3">
           <div>
-            <h3 className="text-gray-900 font-semibold mb-4">Explore</h3>
+            <h3 className="mb-4 font-semibold text-gray-900">Explore</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="hover:text-orange-600 transition">
+                <Link to="/" className="transition hover:text-orange-600">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="hover:text-orange-600 transition">
+                <Link to="/about" className="transition hover:text-orange-600">
                   About
                 </Link>
               </li>
               <li>
                 <Link
                   to="/projects"
-                  className="hover:text-orange-600 transition"
+                  className="transition hover:text-orange-600"
                 >
                   Projects
                 </Link>
@@ -48,15 +48,15 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-gray-900 font-semibold mb-4">Connect</h3>
+            <h3 className="mb-4 font-semibold text-gray-900">Connect</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/github" className="hover:text-orange-600 transition">
+                <a href="/github" className="transition hover:text-orange-600">
                   GitHub
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-600 transition">
+                <a href="#" className="transition hover:text-orange-600">
                   Discord
                 </a>
               </li>
@@ -64,15 +64,15 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-gray-900 font-semibold mb-4">Legal</h3>
+            <h3 className="mb-4 font-semibold text-gray-900">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-orange-600 transition">
+                <a href="#" className="transition hover:text-orange-600">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-orange-600 transition">
+                <a href="#" className="transition hover:text-orange-600">
                   Terms & Conditions
                 </a>
               </li>
@@ -84,7 +84,7 @@ export default function Footer() {
       <hr className="border-gray-300" />
 
       {/* Bottom Section */}
-      <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div className="flex flex-col items-center justify-between gap-4 px-6 py-6 mx-auto max-w-7xl sm:flex-row">
         <span className="text-sm text-gray-500">
           © 2025{" "}
           <a
@@ -97,16 +97,16 @@ export default function Footer() {
         </span>
 
         <div className="flex space-x-4 text-gray-600">
-          <a href="#" className="hover:text-blue-600 transition">
+          <a href="#" className="transition hover:text-blue-600">
             <Facebook size={18} />
           </a>
-          <a href="#" className="hover:text-blue-600 transition">
+          <a href="#" className="transition hover:text-blue-600">
             <Twitter size={18} />
           </a>
-          <a href="#" className="hover:text-blue-600 transition">
+          <a href="#" className="transition hover:text-blue-600">
             <MessageSquareMore size={18} />
           </a>
-          <a href="#" className="hover:text-blue-600 transition">
+          <a href="#" className="transition hover:text-blue-600">
             <Github size={18} />
           </a>
         </div>
