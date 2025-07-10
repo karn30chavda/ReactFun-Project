@@ -1,6 +1,12 @@
+import {
+  Facebook,
+  Github,
+  MessageSquareMore,
+  Rocket,
+  Twitter,
+} from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "../../../assets/logo.png"
-import { Rocket, Github, Facebook, Twitter, MessageSquareMore } from "lucide-react";
+import logo from "../../../assets/logo.png";
 
 export default function Footer() {
   return (
@@ -9,11 +15,7 @@ export default function Footer() {
         {/* Logo Section */}
         <div className="flex flex-col items-start gap-2 mb-8 md:mb-0">
           <Link to="/" className="flex items-center space-x-2">
-            <img
-              src={logo}
-              className="h-14"
-              alt="Logo"
-            />
+            <img src={logo} className="h-14" alt="Logo" />
           </Link>
           <p className="text-sm text-gray-500">
             Practice • Build • Launch{" "}
