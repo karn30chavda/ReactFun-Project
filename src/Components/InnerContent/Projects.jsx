@@ -2,12 +2,12 @@ import {
   Clock,
   Code2,
   IdCard,
+  ListTodo,
   LogIn,
   Paintbrush,
   Repeat2,
   Rocket,
   Shield,
-  ShieldCheck
 } from "lucide-react"; // Icons
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 
@@ -55,7 +55,7 @@ function Projects() {
     {
       path: "todoApp",
       name: "Todo Manager with LocalStorage",
-      icon: <ShieldCheck size={24} />,
+      icon: <ListTodo size={24} />,
     },
   ];
 
