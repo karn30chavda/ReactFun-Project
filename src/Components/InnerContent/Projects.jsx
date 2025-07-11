@@ -7,6 +7,7 @@ import {
   Repeat2,
   Rocket,
   Shield,
+  ShieldCheck
 } from "lucide-react"; // Icons
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 
