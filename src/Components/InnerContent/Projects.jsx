@@ -53,8 +53,8 @@ function Projects() {
     },
     {
       path: "todoApp",
-      name: "Todo App with LocalStorage",
-      icon: <LogIn size={24} />,
+      name: "Todo Manager with LocalStorage",
+      icon: <ShieldCheck size={24} />,
     },
   ];
 
