@@ -1,8 +1,8 @@
 import {
+  CheckSquare,
   Clock,
   Code2,
   IdCard,
-  ListTodo,
   LogIn,
   Paintbrush,
   Repeat2,
@@ -55,7 +55,7 @@ function Projects() {
     {
       path: "todoApp",
       name: "Todo Manager with LocalStorage",
-      icon: <ListTodo size={24} />,
+      icon: <CheckSquare size={24} />,
     },
   ];
 
