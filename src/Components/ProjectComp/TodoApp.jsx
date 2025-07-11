@@ -50,7 +50,7 @@ function TodoApp() {
     <TodoProvider
       value={{ todos, addTodo, updateTodo, deleteTodo, todoToggle }}
     >
-      <div className="min-h-screen rounded-xl bg-gradient-to-br from-slate-900 to-gray-800 text-white p-6">
+      <div className="w-full md:w-[80%] h-[95%] md:min-h-[70vh] rounded-xl bg-gradient-to-br from-slate-900 to-gray-800 text-white p-6">
         <h1 className="flex items-center justify-center gap-2 text-3xl sm:text-4xl font-extrabold text-center mb-8 text-blue-400">
           <ListTodo size={32} strokeWidth={2.4} />
           Todo Manager
