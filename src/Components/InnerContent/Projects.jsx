@@ -74,7 +74,7 @@ function Projects() {
             className={({ isActive }) =>
               `flex items-center gap-4 p-5 rounded-xl transition-all duration-300 shadow-md border border-gray-300 ${
                 isActive
-                  ? "bg-orange-100 border-orange-400 scale-105"
+                  ? "bg-orange-100 border-orange-400 scale-103"
                   : "bg-white hover:bg-gray-100"
               }`
             }
