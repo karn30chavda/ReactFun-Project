@@ -1,16 +1,17 @@
-import { Link } from "react-router-dom";
-import heroimage from "../../../assets/heroimage.jpg";
 import {
-  Rocket,
-  Wrench,
   BookOpen,
-  PaintBucket,
+  CheckSquare,
   Clock,
+  LogIn,
+  PaintBucket,
   Plus,
   RefreshCw,
+  Rocket,
   ShieldCheck,
-  LogIn,
+  Wrench,
 } from "lucide-react";
+import { Link } from "react-router-dom";
+import heroimage from "../../../assets/heroimage.jpg";
 
 export default function Home() {
   return (
@@ -39,11 +40,7 @@ export default function Home() {
 
           {/* Image */}
           <div className="flex justify-center sm:w-1/2">
-            <img
-              src={heroimage}
-              alt="Hero"
-              className="w-72 sm:w-96"
-            />
+            <img src={heroimage} alt="Hero" className="w-72 sm:w-96" />
           </div>
         </div>
       </aside>
@@ -189,10 +186,10 @@ export default function Home() {
               <h3 className="text-xl font-bold">Cards UI Project</h3>
             </div>
             <p className="text-sm text-gray-600">
-              Beautiful profile cards built using React with props, reusability, and responsive Tailwind design.
+              Beautiful profile cards built using React with props, reusability,
+              and responsive Tailwind design.
             </p>
           </div>
-
 
           {/* Context API Project */}
           <div className="p-6 text-left transition shadow bg-emerald-50 rounded-xl hover:shadow-md">
@@ -201,10 +198,24 @@ export default function Home() {
               <h3 className="text-xl font-bold">useContext Fetching Project</h3>
             </div>
             <p className="text-sm text-gray-600">
-              Fetching username from the login page and displaying it on Profile page using useContext Hook.
+              Fetching username from the login page and displaying it on Profile
+              page using useContext Hook.
             </p>
           </div>
+
+          {/* Todo App Project */}
+          <div className="p-6 text-left transition shadow bg-rose-50 rounded-xl hover:shadow-md">
+            <div className="flex items-center gap-2 mb-2 text-rose-700">
+              <CheckSquare size={20} />
+              <h3 className="text-xl font-bold">Todo Manager</h3>
+            </div>
+            <p className="text-sm text-gray-600">
+              A full-featured Todo list built with React, Tailwind CSS, Lucide
+              icons, and Context API. Supports editing, saving, deleting, and
+              toggling tasks — all synced to localStorage.
+            </p>
           </div>
+        </div>
       </section>
     </div>
   );

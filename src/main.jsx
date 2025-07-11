@@ -1,34 +1,35 @@
+import { ArrowBigUpDash } from "lucide-react";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { ArrowBigUpDash  } from "lucide-react";
 import {
   createBrowserRouter,
   createRoutesFromElements,
-  RouterProvider,
   Route,
+  RouterProvider,
 } from "react-router-dom";
-import "./index.css";
 import App from "./App";
+import "./index.css";
 
 import {
-  Home,
-  Github,
   About,
-  User,
-  Projects,
+  Github,
   gitHubInfo,
+  Home,
+  Projects,
+  User,
 } from "./Components/InnerContent/InnerContentExporter";
 
 import {
   BgColourChanger,
-  CounterApp,
-  Clock,
-  CurrencyApp,
-  PasswordGenerator,
   Card,
-  UsecontextProvider,
+  Clock,
+  CounterApp,
+  CurrencyApp,
   Login,
+  PasswordGenerator,
   Profile,
+  TodoApp,
+  UsecontextProvider,
 } from "./Components/ProjectComp/ProjectExporter";
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -41,7 +42,10 @@ const router = createBrowserRouter(
           index
           element={
             <div className="flex flex-col items-center justify-center mt-10 text-center">
-              <ArrowBigUpDash   size={48} className="mb-2 text-indigo-500 animate-bounce" />
+              <ArrowBigUpDash
+                size={48}
+                className="mb-2 text-indigo-500 animate-bounce"
+              />
               <p className="text-xl font-bold tracking-wider text-orange-500 ">
                 Select a project to view details
               </p>
@@ -52,6 +56,7 @@ const router = createBrowserRouter(
         <Route path="Clock" element={<Clock />} />
         <Route path="Counter-project" element={<CounterApp />} />
         <Route path="CurrencyApp" element={<CurrencyApp />} />
+        <Route path="todoApp" element={<TodoApp />} />
         <Route
           path="Password-Genrator-Project"
           element={<PasswordGenerator />}

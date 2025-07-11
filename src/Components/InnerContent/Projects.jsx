@@ -1,5 +1,14 @@
-import { Outlet, NavLink, useLocation } from "react-router-dom";
-import { Code2, Paintbrush, Clock, Repeat2, Shield, IdCard, Rocket, LogIn } from "lucide-react"; // Icons
+import {
+  Clock,
+  Code2,
+  IdCard,
+  LogIn,
+  Paintbrush,
+  Repeat2,
+  Rocket,
+  Shield,
+} from "lucide-react"; // Icons
+import { NavLink, Outlet, useLocation } from "react-router-dom";
 
 function Projects() {
   const location = useLocation();
@@ -35,11 +44,16 @@ function Projects() {
     {
       path: "card",
       name: "Resuable Card",
-      icon: <IdCard  size={24} />,
+      icon: <IdCard size={24} />,
     },
     {
       path: "Context",
       name: "Context Api Project",
+      icon: <LogIn size={24} />,
+    },
+    {
+      path: "todoApp",
+      name: "Todo App with LocalStorage",
       icon: <LogIn size={24} />,
     },
   ];
@@ -47,7 +61,8 @@ function Projects() {
   return (
     <div className="min-h-screen bg-gradient-to-tr from-gray-100 to-gray-200 py-12 px-4">
       <h1 className="text-4xl text-center font-bold text-blue-700 mb-10 tracking-tight">
-         <Rocket className="inline align-middle ml-1" size={40} /> Featured React Projects
+        <Rocket className="inline align-middle ml-1" size={40} /> Featured React
+        Projects
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -64,7 +79,9 @@ function Projects() {
             }
           >
             <div className="text-blue-600">{project.icon}</div>
-            <div className="text-lg font-semibold text-gray-800">{project.name}</div>
+            <div className="text-lg font-semibold text-gray-800">
+              {project.name}
+            </div>
           </NavLink>
         ))}
       </div>
