@@ -94,6 +94,16 @@ Welcome to my **React + Tailwind** project collection built just for fun and lea
 * **What I Learned**:
 
   * React Router `useState`
+    
+### 8. 📝 Todo Manager
+* **Highlights**:
+ 
+  * Todo manager with localStorage
+  * Adding, Editing, and Deleting todos using their Id
+* **What I Learned**:
+
+  * how to get and set localStorage
+  * react Hooks `useContext`
   
 ---
 
